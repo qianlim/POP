@@ -1,0 +1,50 @@
+# This is the configuration that's used to train one of the provided pretrained models (ReSynth data); it also appeared in the paper.
+POP_pretrained_ReSynthdata_12outfits:
+  seen:
+    - rp_anna_posed_001 # a knee-length dress, short sleeve, female
+    - rp_beatrice_posed_025 # a knee-length dress, long sleeve, with folding details, female
+    - rp_christine_posed_027 # another dress, female
+    - rp_felice_posed_004 # long dress+tank-top, female
+    - rp_celina_posed_005 # a tight dress, mid-sleeve, female
+    - rp_alexandra_posed_006 # loose blouse + long pants, female
+    - rp_carla_posed_006 # tight long t-shirt + tight long pants, petit body, female
+    - rp_cindy_posed_005 # tight long t-shirt + tight long pants, heavier body, female
+    - rp_corey_posed_006 # fit long-tshirt + long pants, regular body, male
+    - rp_eric_posed_006 # fit henley long t-shirt + long pants, rolled sleeves, regular body, male
+    - rp_carla_posed_004 # half-open puffy down jacket + tight long pants, regular body, female
+    - rp_eric_posed_035 # closed blazer jacket, with a dress shirt inside, long pants, regular body, male
+  unseen:
+    - rp_beatrice_posed_005 # rolled sleeve tshirt + long pants, regular body, female
+    - rp_corey_posed_010 # short tshirt + long pants, regular body, male
+    - rp_fiona_posed_013 # short tshirt + long pants, female
+    - rp_janna_posed_032 # short tshirt, tucked-in + long pants, female
+
+
+# This is the configuration that's used to train one of the provided pretrained models (CAPE data); it also appeared in the paper.
+POP_pretrained_CAPEdata_14outfits:
+  seen:
+    - 00096_jerseyshort
+    - 00096_longshort
+    - 00096_shirtlong
+    - 00096_shirtshort
+    - 00096_shortlong
+    - 00096_shortshort
+    - 00215_longshort
+    - 00215_poloshort
+    - 00215_shortlong
+    - 00215_jerseyshort
+    - 03375_blazerlong
+    - 03375_longlong
+    - 03375_shortshort
+    - 03375_shortlong
+  unseen:
+    - 00032_shortlong
+
+
+# an example for a quick training demo
+POP_train_demo_ReSynthData:
+  seen: 
+    - rp_anna_posed_001
+    - rp_beatrice_posed_025
+  unseen:
+    - rp_janna_posed_023
