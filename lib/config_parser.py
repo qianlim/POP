@@ -59,7 +59,7 @@ def parse_config(argv=None):
     parser.add_argument('--lr', type=float, default=3e-4, help='learning rate')
     parser.add_argument('--lr_geomfeat', type=float, default=5e-4, help='learning rate for the geometric feature tensor auto-decoding')
     parser.add_argument('--save_all_results', type=int, default=0, help='save the entire test set results at inference')
-    parser.add_argument('--num_optim_iterations', type=int, default=400, help='number of optim iterations for the geom_featmap at test time')
+    parser.add_argument('--num_optim_iterations', type=int, default=401, help='number of optim iterations for the geom_featmap at test time')
     parser.add_argument('--num_unseen_frames', type=int, default=1, help='number of frames to be optimized at the test-unseen optimization process')
 
     args, _ = parser.parse_known_args()

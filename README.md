@@ -47,7 +47,7 @@ Qianli Ma, Jinlong Yang, Siyu Tang, and Michael J. Black <br>[Paper](https://ps.
 For example, the checkpoints' path for the ReSynth-pretrianed model will be `checkpoints/POP_pretrained_ReSynthdata_12outfits/<.pt checkpoint files>`.
 - Download the packed data for demo from the [ReSynth dataset](https://pop.is.tue.mpg.de/).
 
-  - After a simple registration, go to the "Download" tab and choose the "Option 1" (data_for_POP_demo) there. Download both "packed packed npz files" and "high-res point clouds", unzip respectively to the `data/resynth` folder. 
+  - After a simple registration, go to the "Download" tab and choose the "Option 1" (POP_demo_data) there. Download both "packed packed npz files" and "high-res point clouds", unzip respectively to the `data/resynth` folder. 
   - The data file paths should look like `data/resynth/packed/<outfit_name>/<train,test,val split>/<npz files>`.
 
 ### Run inference

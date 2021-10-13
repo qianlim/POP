@@ -2,7 +2,7 @@ name: POP_pretrained_ReSynthdata_12outfits
 dataset_type: resynth
 batch_size: 4
 save_all_results: 1
-data_spacing: 10
+data_spacing: 2
 epochs: 401
 query_posmap_size: 256
 inp_posmap_size: 128
@@ -13,7 +13,7 @@ mode: test
 # dataset_type: cape
 # batch_size: 4
 # save_all_results: 0
-# data_spacing: 10
+# data_spacing: 2
 # epochs: 401
 # query_posmap_size: 256
 # inp_posmap_size: 128

@@ -2,7 +2,7 @@ name: POP_train_demo_ReSynthData
 dataset_type: resynth
 batch_size: 4
 save_all_results: 0
-data_spacing: 10
+data_spacing: 1
 epochs: 401
 inp_posmap_size: 128
 query_posmap_size: 256

@@ -296,6 +296,8 @@ def main():
         test_rst_msg.append('\tEval on test set, unseen clo:')
 
         for outfit in per_outfit_dataset:
+            assert args.num_unseen_frames ==1, "Currently only supports single scan optimization."
+            
             print('------Sequence test data for animation:')
             test_set = CloDataSet(split='test', outfits=outfit, sample_spacing=args.data_spacing, dataset_subset_portion=1.0, **dataset_config)
             test_loader = DataLoader(test_set, batch_size=args.batch_size*2, shuffle=False, num_workers=4)
