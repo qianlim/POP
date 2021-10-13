@@ -5,7 +5,7 @@
 This repository contains the official PyTorch implementation of the ICCV 2021 paper:
 
 **The Power of Points for Modeling Humans in Clothing** <br>
-Qianli Ma, Jinlong Yang, Siyu Tang, and Michael J. Black <br>[Paper](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/655/POP_camera_ready.pdf) | [Supp](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/656/POP_supp.pdf) | [Video](https://youtu.be/5M4F9zSWIEE) | [Project website](https://qianlim.github.io/POP.html) | [Dataset](https://pop.is.tue.mpg.de/)
+Qianli Ma, Jinlong Yang, Siyu Tang, and Michael J. Black <br>[Paper](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/655/POP_camera_ready.pdf) | [Supp](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/656/POP_supp.pdf) | [Video](https://youtu.be/JY5OI74yJ4w) | [Project website](https://qianlim.github.io/POP.html) | [Dataset](https://pop.is.tue.mpg.de/)
 
 ![](teasers/POP_teaser.png)
 
