@@ -105,9 +105,18 @@ The rendered images of each outfit will be saved under their respective subfolde
 
 ### Training with your own data
 
-- We will provide the data pre-processing and packing codes for your custom data soon (ETA: end of October 2021).
+- We also provide the packed, POP-compatible CAPE data of the subjects/outfit-types that we use in the paper. The data is accessible at the bottom of the [CAPE Dataset Download page](https://cape.is.tue.mpg.de/download.php).
+- We will provide the data pre-processing and packing codes for your custom data soon.
 
 
+
+## News
+
+- [2021/10/29] **We now provide the packed, POP-compatible CAPE data on the [CAPE dataset website](https://cape.is.tue.mpg.de/download.php).** Simply register as a user there to access the download links (at the bottom of the Download page).
+
+- [2021/10/12] Code online.
+
+  
 
 ## License
 
