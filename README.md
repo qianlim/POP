@@ -114,6 +114,8 @@ The rendered images of each outfit will be saved under their respective subfolde
 
 - [2021/10/29] **We now provide the packed, POP-compatible CAPE data on the [CAPE dataset website](https://cape.is.tue.mpg.de/download.php).** Simply register as a user there to access the download links (at the bottom of the Download page).
 
+- [2021/10/16] The synthetic ReSynth data used in our paper is available now! Check out the [ReSynth dataset website](https://pop.is.tue.mpg.de/) for more information and download links.
+
 - [2021/10/12] Code online.
 
   
