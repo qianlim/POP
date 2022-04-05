@@ -388,13 +388,13 @@ class UnetNoCond7DS(nn.Module):
         self.upconv4 = UpConv2DBlock(8 * nf * 2, 4 * nf, 4, 2, 1, up_mode=up_mode, use_dropout=use_dropout) # 8x8, 512
 
         # Coord regressor
-        self.upconvC5 = UpConv2DBlock(4 * nf * 3, 2 * nf, 4, 2, 1, up_mode='upsample') # 16
+        self.upconvC5 = UpConv2DBlock(4 * nf * 2, 2 * nf, 4, 2, 1, up_mode='upsample') # 16
         self.upconvC6 = UpConv2DBlock(2 * nf * 2, 1 * nf, 4, 2, 1, up_mode='upsample') # 32
         self.upconvC7 = UpConv2DBlock(1 * nf * 2, output_nc, 4, 2, 1, use_bn=False, use_bias=True, up_mode='upsample') # 64x64, 128
 
         if return_2branches:
             # Normal regressor
-            self.upconvN5 = UpConv2DBlock(4 * nf * 3, 2 * nf, 4, 2, 1, up_mode='upconv') # 32x32, 256
+            self.upconvN5 = UpConv2DBlock(4 * nf * 2, 2 * nf, 4, 2, 1, up_mode='upconv') # 32x32, 256
             self.upconvN6 = UpConv2DBlock(2 * nf * 2, 1 * nf, 4, 2, 1, up_mode='upconv') # 64x64, 128
             self.upconvN7 = UpConv2DBlock(1 * nf * 2, 3, 4, 2, 1, use_bn=False, use_bias=True, up_mode='upconv') # 64x64, 128
 
@@ -411,7 +411,7 @@ class UnetNoCond7DS(nn.Module):
         u1 = self.upconv1(d7, d6)
         u2 = self.upconv2(u1, d5)
         u3 = self.upconv3(u2, d4)
-        u4 = self.upconv3(u3, d3)
+        u4 = self.upconv4(u3, d3)
 
         # coord regressor
         uc5 = self.upconvC5(u4, d2)
