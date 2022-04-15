@@ -190,10 +190,6 @@ def main():
                 print('\n{}, Epoch {}, average {:.2f} min / epoch.'.format(dt_string, epoch_idx, dur))
                 print('Weights s2m: {:.1e}, m2s: {:.1e}, normal: {:.1e}, rgl: {:.1e}'.format(args.w_s2m, args.w_m2s, wrise_normal, wdecay_rgl))
 
-                checkpoints = sorted([fn for fn in os.listdir(ckpt_dir) if fn.endswith('_geom_featmap.pt')])
-                checkpoint = join(ckpt_dir, checkpoints[-1])
-                load_latent_feats(checkpoint, geom_featmap)
-
                 # validate on the validation set of seen clothing, unsee poses
                 val_stats = test_seen_clo(  
                                             model, 
