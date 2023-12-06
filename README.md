@@ -112,6 +112,8 @@ The rendered images of each outfit will be saved under their respective subfolde
 
 ## News
 
+- [2023/12/06] Body shape and pose parameters (SMPL-X) for the ReSynth data are now available on the [dataset website](https://pop.is.tue.mpg.de/)! We also provide [a guide](https://github.com/qianlim/POP/wiki/How-to-align-the-SMPL%E2%80%90X-body-with-the-clothed-body-point-clouds-in-ReSynth-data) to align the SMPL-X bodies with the clothed body point clouds in ReSynth data.
+
 - [2021/10/29] **We now provide the packed, POP-compatible CAPE data on the [CAPE dataset website](https://cape.is.tue.mpg.de/download.php).** Simply register as a user there to access the download links (at the bottom of the Download page).
 
 - [2021/10/16] The synthetic ReSynth data used in our paper is available now! Check out the [ReSynth dataset website](https://pop.is.tue.mpg.de/) for more information and download links.
